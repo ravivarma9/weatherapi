@@ -14,6 +14,10 @@ public class WeatherDataEntity {
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
 
+        public Long getWeatherId() {
+                return id;
+        }
+
         @Column(unique = true)
         private String city;
 
